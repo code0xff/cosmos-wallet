@@ -1,0 +1,30 @@
+{
+  "name": "cosmos-wallet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "bin": {
+    "app": "./build/index.js"
+  },
+  "scripts": {
+    "start": "node ./build/index.js",
+    "build": "tsc",
+    "build:package": "tsc && pkg .",
+    "dev": "ts-node-esm index.ts"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.28.11",
+    "@cosmjs/proto-signing": "^0.28.11",
+    "@cosmjs/stargate": "^0.28.11",
+    "@types/node": "^18.7.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "commander": "^9.4.0"
+  }
+}
